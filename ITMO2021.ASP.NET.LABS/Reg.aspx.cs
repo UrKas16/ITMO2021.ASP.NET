@@ -11,7 +11,26 @@ namespace ITMO2021.ASP.NET.Labs
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (IsPostBack)
+            {
+                GuestResponse rsvp = new GuestResponse(name.Text, email.Text, phone.Text, CheckBoxYN.Checked);
+
+                //ResponseRepository.GetRepository().AddResponse(rsvp); // ResponseRepository вне видимости, как обратиться к данному классу?
+
+                if (rsvp.WillAttend.HasValue && rsvp.WillAttend.Value)
+                {
+                    Response.Redirect("seeyouthere.html");
+
+                }
+                else
+                {
+                    Response.Redirect("sorryyoucantcome.html");
+                }
+
+            }
+
 
         }
+
     }
 }
