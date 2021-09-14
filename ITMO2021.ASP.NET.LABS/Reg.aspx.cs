@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using ITMO2021.ASP.NET.Labs;
 
 namespace ITMO2021.ASP.NET.Labs
 {
@@ -15,7 +16,7 @@ namespace ITMO2021.ASP.NET.Labs
             {
                 GuestResponse rsvp = new GuestResponse(name.Text, email.Text, phone.Text, CheckBoxYN.Checked);
 
-                //ResponseRepository.GetRepository().AddResponse(rsvp); // ResponseRepository вне видимости, как обратиться к данному классу?
+                ResponseRepository.GetRepository().AddResponse(rsvp); // ResponseRepository вне видимости, как обратиться к данному классу?
 
                 if (rsvp.WillAttend.HasValue && rsvp.WillAttend.Value)
                 {
