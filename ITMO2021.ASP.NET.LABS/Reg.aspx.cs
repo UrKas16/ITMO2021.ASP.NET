@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using ITMO2021.ASP.NET.Labs;
+using ITMO2021.ASP.NET.Labs.App_Code;
 
 namespace ITMO2021.ASP.NET.Labs
 {

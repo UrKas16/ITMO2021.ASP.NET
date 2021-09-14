@@ -6,7 +6,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Участники семинара</title>
-    <link href="Styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Styles.css"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -25,7 +25,7 @@
                     <% var yesData = ResponseRepository.GetRepository().GetAllResponses().Where(r => r.WillAttend.Value);
                         foreach (var rsvp in yesData)
                         {
-                            string htmlString = String.Format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}{/td}</tr>", rsvp.Name, rsvp.Email, rsvp.Phone, rsvp.Rdata);
+                            string htmlString = String.Format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td>", rsvp.Name, rsvp.Email, rsvp.Phone, rsvp.Rdata);
                             Response.Write(htmlString);
                         }
                         %>

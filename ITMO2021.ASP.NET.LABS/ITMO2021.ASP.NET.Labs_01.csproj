@@ -99,7 +99,7 @@
     <Compile Include="Summary.aspx.designer.cs">
       <DependentUpon>Summary.aspx</DependentUpon>
     </Compile>
-    <Content Include="App_Code\ResponseRepository.cs" />
+    <Compile Include="ResponseRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RSVP.aspx.cs">
       <DependentUpon>RSVP.aspx</DependentUpon>

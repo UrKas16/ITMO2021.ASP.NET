@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ITMO2021.ASP.NET.Labs
+namespace ITMO2021.ASP.NET.Labs.App_Code
 {
     public class GuestResponse
     {
