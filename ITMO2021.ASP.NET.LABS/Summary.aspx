@@ -7,7 +7,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Участники семинара</title>
-    <link rel="stylesheet" href="Styles.css" />
+    <link rel="stylesheet" href="HTML_and_CSS_Files\Styles.css" />
 </head>
 <body>
     <form id="form1" runat="server">
