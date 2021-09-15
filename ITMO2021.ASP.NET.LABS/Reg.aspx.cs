@@ -20,12 +20,12 @@ namespace ITMO2021.ASP.NET.Labs
 
                 if (rsvp.WillAttend.HasValue && rsvp.WillAttend.Value)
                 {
-                    Response.Redirect("seeyouthere.html");
+                    Response.Redirect("HTML_and_CSS_Files//seeyouthere.html");
 
                 }
                 else
                 {
-                    Response.Redirect("sorryyoucantcome.html");
+                    Response.Redirect("HTML_and_CSS_Files//sorryyoucantcome.html");
                 }
 
             }
