@@ -11,7 +11,7 @@ namespace ITMO2021.ASP.NET.Labs
 {
 
 
-    public partial class Summary
+    public partial class About
     {
     }
 }

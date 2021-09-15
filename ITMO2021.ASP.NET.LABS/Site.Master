@@ -29,6 +29,7 @@
                                 <asp:MenuItem NavigateUrl="~/Start.aspx" Text="Главная"></asp:MenuItem>
                                 <asp:MenuItem NavigateUrl="~/Reg.aspx" Text="Регитсрация"></asp:MenuItem>
                                 <asp:MenuItem NavigateUrl="~/Summary.aspx" Text="Отчет о регистрации"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/About.aspx" Text="Подробности"></asp:MenuItem>
                             </Items>
                         </asp:Menu>
                     </div>
