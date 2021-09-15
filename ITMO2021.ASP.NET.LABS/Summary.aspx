@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Summary.aspx.cs" Inherits="ITMO2021.ASP.NET.Labs.Summary" %>
+
 <%@ Import Namespace="ITMO2021.ASP.NET.Labs" %>
 <!DOCTYPE html>
 
@@ -6,7 +7,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Участники семинара</title>
-    <link rel="stylesheet" href="Styles.css"/>
+    <link rel="stylesheet" href="Styles.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -28,7 +29,20 @@
                             string htmlString = String.Format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td>", rsvp.Name, rsvp.Email, rsvp.Phone, rsvp.Rdata);
                             Response.Write(htmlString);
                         }
-                        %>
+                    %>
+                </tbody>
+            </table>
+            <h3>Участники без доклада:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Email</th>
+                        <th>Телефон</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%= GetNoShowHtml() %>
                 </tbody>
             </table>
         </div>
